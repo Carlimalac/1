@@ -8,7 +8,7 @@
 body, html {
     height: 100%;
     overflow: hidden;
-    background-color: #1e1e2e; /* Fondo oscuro fijo */
+    background-color: #1e1e2e; 
     font-family: Arial, sans-serif;
 }
 
