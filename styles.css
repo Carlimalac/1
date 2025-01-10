@@ -38,7 +38,7 @@ body, html {
     background-color: rgba(0, 0, 0, 0.6);
     color: #FF73FA; 
     padding: 8px 10px; 
-    font-size: 0,5rem; 
+    font-size: 10px; 
     font-family: 'Arial', sans-serif;
     border-radius: 8px;
     z-index: 2;
