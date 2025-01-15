@@ -16,11 +16,12 @@ const sounds = [
 const colors = ["#FF6B6B", "#FFBC42", "#80FF72", "#72DEFF", "#FF73FA", "#737DFF", "#F4FF61"];
 
 
-const shapes = ["circle", "square", "triangle", "heart", "cat"];
+const shapes = ["circle", "square", "triangle"];
 
 document.body.addEventListener("click", (event) => {
     playRandomSound();
     createRandomShape(event.clientX, event.clientY);
+    hideInstructions();
 });
 
 
@@ -57,3 +58,20 @@ function createRandomShape(x, y) {
         shape.remove();
     });
 }
+
+
+
+function hideInstructions() {
+    const instructions = document.querySelector(".instructions");
+
+    
+    setTimeout(() => {
+        instructions.style.opacity = 0;
+        
+        
+        setTimeout(() => {
+            instructions.style.display = 'none';
+        }, 300); 
+    }, 4000); 
+}
+
